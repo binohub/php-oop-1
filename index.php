@@ -25,7 +25,7 @@ class Card{
         }
     }
 
-
+ 
     public function getType(){
         return $this->type;
     }
@@ -38,6 +38,7 @@ class Card{
     }
     public function setLvl($lvl){
         $this->lvl = $lvl;
+        $this->setBonusatk($lvl);
     }
 
 
@@ -59,8 +60,8 @@ class Card{
     public function getBonusatk(){
         return $this->bonusatk;
     }
-    public function setBonusatk(){
-        if($this->lvl <= 7){
+    public function setBonusatk($lvl){
+        if($lvl <= 7){
             $this->bonusatk = 1000;
         }
     }
@@ -73,7 +74,6 @@ $CardOne->setType("monster");
 $CardOne->setLvl(8);
 $CardOne->setAtk(3000);
 $CardOne->setDef(2500);
-$CardOne->setBonusatk();
 // $CardOne->name = "drago bianco occhi blu";
 // $CardOne->type = "monster";
 // $CardOne->atk = 3000;
@@ -89,7 +89,6 @@ $CardTwo->setType("monster");
 $CardTwo->setLvl(7);
 $CardTwo->setAtk(2800);
 $CardTwo->setDef(2000);
-$CardTwo->setBonusatk();
 // $CardTwo->name = "drago nero occhi rossi";
 // $CardTwo->type = "monster";
 // $CardTwo->atk = 2500;
