@@ -6,8 +6,10 @@ class Card{
     // insert card's characteristics
     private $name;
     private $type;
+    private $lvl = 1;
     private $atk = 0;
     private $def = 0;
+    private $bonusatk = 0;
 
     // // methods
     public function getName(){
@@ -31,6 +33,13 @@ class Card{
         $this->type = $type;
     }
 
+    public function getLvl(){
+        return $this->lvl;
+    }
+    public function setLvl($lvl){
+        $this->lvl = $lvl;
+    }
+
 
     public function getAtk(){
         return $this->atk;
@@ -46,14 +55,25 @@ class Card{
     public function setDef($def){
         $this->def = $def;
     }
+
+    public function getBonusatk(){
+        return $this->bonusatk;
+    }
+    public function setBonusatk(){
+        if($this->lvl <= 7){
+            $this->bonusatk = 1000;
+        }
+    }
 }
 
 $CardOne = new Card();
 // // populate $CardOne (if private doesn't work; u have to use methods)
 $CardOne->setName("drago bianco occhi blu");
 $CardOne->setType("monster");
+$CardOne->setLvl(8);
 $CardOne->setAtk(3000);
 $CardOne->setDef(2500);
+$CardOne->setBonusatk();
 // $CardOne->name = "drago bianco occhi blu";
 // $CardOne->type = "monster";
 // $CardOne->atk = 3000;
@@ -66,8 +86,10 @@ $CardTwo = new Card();
 // // populate $CardTwo if private doesn't work)
 $CardTwo->setName("drago nero occhi rossi");
 $CardTwo->setType("monster");
+$CardTwo->setLvl(7);
 $CardTwo->setAtk(2800);
 $CardTwo->setDef(2000);
+$CardTwo->setBonusatk();
 // $CardTwo->name = "drago nero occhi rossi";
 // $CardTwo->type = "monster";
 // $CardTwo->atk = 2500;
