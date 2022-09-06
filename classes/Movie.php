@@ -24,7 +24,7 @@ class Movie
         $this->setGenres($genres);
         $this->setRuntime($runtime);
         $this->setPrice($price);
-        echo "I BUILDED A NEW MOVIE!";
+        // echo "I BUILDED A NEW MOVIE!";
     }
     public function getName()
     {
@@ -68,9 +68,9 @@ class Movie
     }
 }
 
-$MovieOne = new Movie("spiderman homecoming", "action", "1h 37m", 9.99);
-var_dump($MovieOne);
-$MovieTwo = new Movie("joker", "horror", "2h 16m", 16.99);
-var_dump($MovieTwo);
-$MovieThree = new Movie("batman","adventure", "1h 58m", 15);
-var_dump($MovieThree);
+// $MovieOne = new Movie("spiderman homecoming", "action", "1h 37m", 9.99);
+// var_dump($MovieOne);
+// $MovieTwo = new Movie("joker", "horror", "2h 16m", 16.99);
+// var_dump($MovieTwo);
+// $MovieThree = new Movie("batman","adventure", "1h 58m", 15);
+// var_dump($MovieThree);

@@ -12,7 +12,6 @@ class Actor
     {
         $this->setFullname($fullname);
         $this->setAge($age);
-        echo " | +1 Actor ";
     }
 
     public function getFullname()
