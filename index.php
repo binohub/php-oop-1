@@ -10,7 +10,7 @@ $actors[] = new Actor('shinici kudo', 17);
 $actors[] = new Actor('axel blaze', 16);
 $actors[] = new Actor('kou mabuchi', 22);
 $actors[] = new Actor('thomas shelby', 37);
-var_dump($actors);
+// var_dump($actors); 
 
 ?>
 
@@ -27,7 +27,8 @@ var_dump($actors);
 </head>
 
 <body>
-    <h1>Actors:</h1>
+    
+    <!-- <h1>Actors:</h1>
 
     <?php foreach ($actors as $actor) { ?>
 
@@ -36,14 +37,14 @@ var_dump($actors);
                 <?php
 
                 # code...
-                echo $actor->getFullname();
+                echo $actor->getFullname() . " | " . $actor->getAge() . " years old";
 
                 ?>
             </li>
         </ul>
 
 
-    <?php } ?>
+    <?php } ?> -->
 
 
 </body>
