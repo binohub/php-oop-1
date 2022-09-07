@@ -1,13 +1,10 @@
 <?php
 
-// crea una nuova classe 
 class Actor
 {
-    // insert actor's characteristics
     private $fullname;
     private $age;
 
-    // // // METHODS
     function __construct($fullname, $age)
     {
         $this->setFullname($fullname);
@@ -32,5 +29,3 @@ class Actor
         $this->age = $age;
     }
 }
-
-

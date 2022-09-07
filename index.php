@@ -1,6 +1,4 @@
 <?php
-
-
 require_once __DIR__ . '/classes/Movie.php';
 require_once __DIR__ . '/classes/Actor.php';
 
@@ -11,7 +9,6 @@ $actors[] = new Actor('axel blaze', 16);
 $actors[] = new Actor('kou mabuchi', 22);
 $actors[] = new Actor('thomas shelby', 37);
 // var_dump($actors); 
-
 ?>
 
 
@@ -27,7 +24,6 @@ $actors[] = new Actor('thomas shelby', 37);
 </head>
 
 <body>
-    
     <!-- <h1>Actors:</h1>
 
     <?php foreach ($actors as $actor) { ?>
